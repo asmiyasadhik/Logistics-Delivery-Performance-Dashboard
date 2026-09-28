@@ -33,17 +33,22 @@ The project is designed around three key business questions:
 | DAX | Creating measures and KPIs |
 
 ## Dataset Description
-The project uses a synthetic logistics delivery dataset created for analytical and dashboard development purposes.
+
+The project uses a logistics delivery dataset obtained from Kaggle for data analysis and dashboard development.
 
 The dataset contains approximately 25,000 delivery records representing logistics operations across multiple delivery partners, regions, package types, vehicle types, and delivery modes.
 
 The data is used to demonstrate data preparation, KPI development, interactive visualization, and logistics performance analysis using Microsoft Power BI.
 
-Dataset Type: Synthetic Data
-Records: Approximately 25,000
-Domain: Logistics and Delivery Operations
+- **Dataset Name:** Delivery Logistics Dataset (India – Multi-Partner)
+- **Dataset Type:** Logistics delivery data (origin not independently verified)
+- **Number of Records:** Approximately 25,000
+- **Number of Columns:** 15
+- **Domain:** Logistics and Delivery Operations
+- **File Format:** CSV
+- **Dataset Source:** [Kaggle – Delivery Logistics Dataset](https://www.kaggle.com/datasets/muhammadahmaddaar/delivery-logistics-dataset-india-multi-partner)
 
-### Key Dataset Fields
+## Key Dataset Fields
 
 | **Column** | **Description** |
 |---|---|

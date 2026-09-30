@@ -264,12 +264,13 @@ The charts are organized across the five report pages to support both high-level
 
 Slicers allow users to filter the report and explore selected parts of the dataset.
 
-| **Slicer** | **Purpose** |
-|---|---|
-| Delivery Partner | Focuses analysis on a selected logistics partner |
-| Region | Filters results by geographic region |
+| **Slicer**        | **Purpose**                                                     |
+| ----------------- | --------------------------------------------------------------- |
+| Delivery Partner  | Focuses analysis on a selected logistics partner                |
+| Region            | Filters results by geographic region                            |
 | Weather Condition | Explores delivery performance under selected weather conditions |
-| Delivery Mode | Compares results for selected delivery modes |
+| Delivery Mode     | Compares results for selected delivery modes                    |
+| Package Type      | Filters delivery costs by package category                      |
 
 The available slicers vary by report page. KPI cards and charts respond to applicable filter selections, allowing users to explore the data interactively.
 

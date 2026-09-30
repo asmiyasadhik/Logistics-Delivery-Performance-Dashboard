@@ -290,13 +290,27 @@ The current dashboard calculations provide the following summary of the dataset:
 
 ## Initial Observations
 
-- Most delivery records are classified as on-time, while approximately 26.7% are marked as delayed.
-- Delivery performance can be compared across partners and regions to identify differences in delay rates.
-- Average delivery costs can be examined across delivery partners, vehicles, delivery modes, regions, and package types.
-- Customer ratings provide an additional perspective on service quality.
-- Low-rating deliveries can be examined by region and compared with other performance indicators.
+## Key Findings
 
-These observations describe the current dataset. Further investigation would be needed to establish the causes of delays, cost differences, or customer rating patterns.
+**Delivery Performance**
+- Of 25,000 deliveries, 6,669 (26.7%) were marked delayed and 18,331 (73.3%) were on time. The delayed group includes about 5,340 late deliveries and 1,329 failed deliveries.
+- Weather shows the widest gap in delay rates: stormy (41.4%) and rainy (37.4%) conditions are well above clear (17.4%), hot (17.1%) and cold (16.0%) conditions.
+- Delay rates across delivery partners are close together, from 24.8% (Delhivery) to 28.3% (XpressBees).
+- Central has the highest regional delay rate (27.3%) and East the lowest (25.8%). Package types range from 24.8% (furniture) to 27.5% (pharmacy).
+
+**Cost & Operations**
+- Total delivery cost is ₹21.62M, with an average of ₹864.94 per delivery.
+- Delivery mode shows the largest cost difference: same-day (₹929.87) and express (₹880.43) cost more than two-day (₹829.71) and standard (₹819.34).
+- Average cost differs only slightly by partner (₹848.11 to ₹872.83), vehicle type (₹857.66 to ₹869.24) and region (₹858.30 to ₹874.21).
+- Clothing (₹879) and automobile parts (₹877) have the highest average cost by package type, and fragile items (₹847) the lowest.
+
+**Customer & Service**
+- The average delivery rating is 3.67 out of 5, and 18.1% of deliveries have a low rating (2 or below).
+- Deliveries not marked delayed average a rating of 4.2, compared with 2.2 for delayed deliveries.
+- Average ratings are similar across partners (3.6 to 3.7).
+- Central has both the highest delay rate and the highest low-rating share (18.8%), and East has the lowest of both (25.8% and 17.4%).
+
+These findings describe the current dataset. The dashboard shows associations only, and further analysis would be needed to establish the causes of delays, cost differences or rating patterns.
 
 ## Business Value
 

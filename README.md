@@ -30,6 +30,10 @@ The project is designed around three key business questions:
 
 ### Page 5 – Regional & Package Cost Insights
 ![Regional & Package Cost Insights](screenshots/page5_regional_package_cost.png)
+
+## Project Files
+
+- [Presentation (PowerPoint)](presentation/Logistics_Delivery_Dashboard_with_Screenshots.pptx)
   
 ## Project Objectives
 - Analyze overall delivery performance using key performance indicators.

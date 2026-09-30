@@ -317,6 +317,7 @@ The dashboard supports analysis and decision-making; it does not by itself estab
 - The findings are based on the available dataset and should be interpreted within its scope.
 - Relationships observed in the dashboard do not necessarily indicate causation.
 - Dataset sharing will depend on permission to redistribute the source data.
+- The `delayed` field marks both late and failed deliveries as delayed, so Delayed Deliveries (6,669) and Delay Rate (26.7%) include the 1,329 failed deliveries shown separately in the delivery status chart.
 
 ## Future Enhancements
 Potential improvements include:

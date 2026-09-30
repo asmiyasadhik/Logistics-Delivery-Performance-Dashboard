@@ -1,3 +1,4 @@
+
 # Logistics & Delivery Performance Intelligence Dashboard
 An Interactive Power BI Project for Logistics Analytics, Delivery Performance Monitoring, and Operational Cost Analysis
 ## Project Overview
@@ -141,8 +142,7 @@ Examines delivery delays across different operational categories.
 - Delay rate by region
 - Delay rate by weather condition
 - Delay rate by package type
-- Delay rate by vehicle type
-- A pie chart for category distribution
+- A Donut chart for category distribution
 
 **Purpose:** To explore how delivery performance varies across partners, regions, weather conditions, package types, and vehicles.
 
@@ -192,7 +192,7 @@ Compares delivery costs across geographic regions and package categories.
 **Key Performance Indicators:**
 
 - Total Deliveries
-- Delayed Deliveries
+- Total Delivery Cost
 - Delay Rate
 - Average Delivery Cost
 
@@ -237,7 +237,7 @@ The dashboard uses visualizations to communicate delivery performance and cost p
 |---|---|
 | Clustered Column Chart | Compares values across categories |
 | Stacked Column Chart | Shows the composition of delivery counts |
-| Pie Chart | Shows the distribution of a selected category |
+| Donut Chart | Shows the distribution of a selected category |
 | KPI Cards | Highlight important performance indicators |
 
 The charts are organized across the five report pages to support both high-level monitoring and detailed comparisons.

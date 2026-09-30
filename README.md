@@ -250,12 +250,13 @@ These measures support consistent calculations across the dashboard and respond 
 
 The dashboard uses visualizations to communicate delivery performance and cost patterns.
 
-| **Visualization** | **Analytical Purpose** |
-|---|---|
-| Clustered Column Chart | Compares values across categories |
-| Stacked Column Chart | Shows the composition of delivery counts |
-| Donut Chart | Shows the distribution of a selected category |
-| KPI Cards | Highlight important performance indicators |
+| **Visualization**      | **Analytical Purpose**                                  |
+| ---------------------- | ------------------------------------------------------- |
+| Clustered Column Chart | Compares values across categories                       |
+| Clustered Bar Chart    | Compares average delivery cost across package types     |
+| Stacked Column Chart   | Shows the composition of delivery counts                |
+| Donut Chart            | Shows the distribution of a selected category           |
+| KPI Cards              | Highlight important performance indicators              |
 
 The charts are organized across the five report pages to support both high-level monitoring and detailed comparisons.
 

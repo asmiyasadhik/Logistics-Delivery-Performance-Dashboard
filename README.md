@@ -159,9 +159,9 @@ Examines delivery delays across different operational categories.
 - Delay rate by region
 - Delay rate by weather condition
 - Delay rate by package type
-- A Donut chart for category distribution
+- A Donut chart for delivery status distribution
 
-**Purpose:** To explore how delivery performance varies across partners, regions, weather conditions, package types, and vehicles.
+**Purpose:** To explore how delivery performance varies across partners, regions, weather conditions and package types.
 
 ### Page 3 – Cost & Operations Analysis
 

@@ -13,6 +13,23 @@ The project is designed around three key business questions:
 - How can delivery performance be monitored and improved?
 - Which operational categories should be investigated to understand delivery costs?
 - How can customer ratings be used to evaluate service quality?
+
+## Dashboard Preview
+
+### Page 1 – Executive Overview
+![Executive Overview](screenshots/page1_executive_overview.png)
+
+### Page 2 – Delivery Performance Analysis
+![Delivery Performance Analysis](screenshots/page2_delivery_performance.png)
+
+### Page 3 – Cost & Operations Analysis
+![Cost & Operations Analysis](screenshots/page3_cost_operations.png)
+
+### Page 4 – Customer & Service Analysis
+![Customer & Service Analysis](screenshots/page4_customer_service.png)
+
+### Page 5 – Regional & Package Cost Insights
+![Regional & Package Cost Insights](screenshots/page5_regional_package_cost.png)
   
 ## Project Objectives
 - Analyze overall delivery performance using key performance indicators.

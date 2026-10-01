@@ -1,79 +1,97 @@
+<p align="center">
+  <img src="screenshots/banner.png" alt="Logistics & Delivery Performance Intelligence Dashboard" width="100%">
+</p>
 
-# Logistics & Delivery Performance Intelligence Dashboard
-An Interactive Power BI Project for Logistics Analytics, Delivery Performance Monitoring, and Operational Cost Analysis
-## Project Overview
-The **Logistics & Delivery Performance Intelligence Dashboard** is a data analytics project developed using Microsoft Power BI to analyze delivery operations, monitor logistics performance, and understand factors affecting delivery delays, operational costs, and customer satisfaction.
+<p align="center">
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI">
+  <img src="https://img.shields.io/badge/DAX-Measures-176B50?style=for-the-badge" alt="DAX">
+  <img src="https://img.shields.io/badge/Excel-Data%20Prep-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Excel">
+  <img src="https://img.shields.io/badge/Dataset-Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle">
+</p>
 
-The project explores a logistics dataset containing 25,000 delivery records across multiple delivery partners, regions, package types, vehicle types, and delivery modes.
+<p align="center"><b>An interactive Power BI project for logistics analytics, delivery performance monitoring and operational cost analysis.</b></p>
 
-The dashboard transforms raw logistics data into meaningful visual insights through interactive charts, KPI cards, filters, and DAX measures. It helps users explore delivery performance from different perspectives and identify areas that may require operational improvement.
+<p align="center">
+  <a href="#-project-overview">Overview</a> •
+  <a href="#-dashboard-preview">Preview</a> •
+  <a href="#-dashboard-structure">Structure</a> •
+  <a href="#-dax-measures">DAX</a> •
+  <a href="#-key-findings">Findings</a> •
+  <a href="#-limitations">Limitations</a>
+</p>
 
-The project is designed around three key business questions:
+---
 
-- How can delivery performance be monitored and improved?
-- Which operational categories should be investigated to understand delivery costs?
-- How can customer ratings be used to evaluate service quality?
+## 📌 Project Overview
 
-## Dashboard Preview
+The **Logistics & Delivery Performance Intelligence Dashboard** analyzes 25,000 delivery records across multiple delivery partners, regions, package types, vehicle types and delivery modes. It turns raw logistics data into interactive charts, KPI cards, slicers and DAX measures, so users can see where deliveries are delayed, what drives cost and how customers rate the service.
+
+**Three business questions drive the project**
+
+- 🚚 How can delivery performance be monitored and improved?
+- 💰 Which operational categories explain delivery costs?
+- ⭐ How can customer ratings be used to evaluate service quality?
+
+### At a glance
+
+| 📦 Deliveries | ⏱️ Delay Rate | ✅ On-Time Rate | 💰 Avg. Cost | ⭐ Avg. Rating |
+| :---: | :---: | :---: | :---: | :---: |
+| **25,000** | **26.7%** | **73.3%** | **₹864.94** | **3.67 / 5** |
+
+---
+
+## 🖼️ Dashboard Preview
 
 ### Page 1 – Executive Overview
-![Executive Overview](screenshots/page1_executive_overview.png)
+<img src="screenshots/page1_executive_overview.png" alt="Executive Overview" width="100%">
 
 ### Page 2 – Delivery Performance Analysis
-![Delivery Performance Analysis](screenshots/page2_delivery_performance.png)
+<img src="screenshots/page2_delivery_performance.png" alt="Delivery Performance Analysis" width="100%">
 
 ### Page 3 – Cost & Operations Analysis
-![Cost & Operations Analysis](screenshots/page3_cost_operations.png)
+<img src="screenshots/page3_cost_operations.png" alt="Cost and Operations Analysis" width="100%">
 
 ### Page 4 – Customer & Service Analysis
-![Customer & Service Analysis](screenshots/page4_customer_service.png)
+<img src="screenshots/page4_customer_service.png" alt="Customer and Service Analysis" width="100%">
 
 ### Page 5 – Regional & Package Cost Insights
-![Regional & Package Cost Insights](screenshots/page5_regional_package_cost.png)
+<img src="screenshots/page5_regional_package_cost.png" alt="Regional and Package Cost Insights" width="100%">
 
-## Project Files
+---
 
-- [Presentation (PowerPoint)](presentation/Logistics_Delivery_Dashboard_with_Screenshots.pptx)
-  
-## Project Objectives
+## 🎯 Project Objectives
+
 - Analyze overall delivery performance using key performance indicators.
 - Measure the proportion of delayed and on-time deliveries.
 - Compare delivery performance across partners and regions.
-- Explore delivery costs across vehicles, delivery modes, and package types.
+- Explore delivery costs across vehicles, delivery modes and package types.
 - Understand customer satisfaction through delivery ratings.
 - Identify patterns that may be associated with delivery delays.
-- Present findings through an interactive and easy-to-understand dashboard.
-- Support data-driven analysis of logistics operations.
+- Present findings through an interactive, easy-to-understand dashboard.
 
-## Tools & Technologies
+## 🛠️ Tools & Technologies
 
 | Tool | Purpose |
-|---|---|
+| --- | --- |
 | Microsoft Excel | Data cleaning and preparation |
-| Power BI | Dashboard creation and visualization |
 | Power Query | Data transformation |
+| Power BI | Dashboard creation and visualization |
 | DAX | Creating measures and KPIs |
 
-## Dataset Description
+---
 
-The project uses a logistics delivery dataset obtained from Kaggle for data analysis and dashboard development.
+## 🗂️ Dataset
 
-The dataset contains approximately 25,000 delivery records representing logistics operations across multiple delivery partners, regions, package types, vehicle types, and delivery modes.
+- **Name:** Delivery Logistics Dataset (India – Multi-Partner)
+- **Source:** [Kaggle – Delivery Logistics Dataset](https://www.kaggle.com/datasets/muhammadahmaddaar/delivery-logistics-dataset-india-multi-partner)
+- **Records:** approximately 25,000 | **Columns:** 15 | **Format:** CSV
+- **Domain:** Logistics and delivery operations
 
-The data is used to demonstrate data preparation, KPI development, interactive visualization, and logistics performance analysis using Microsoft Power BI.
+<details>
+<summary><b>Click to view the key dataset fields</b></summary>
 
-- **Dataset Name:** Delivery Logistics Dataset (India – Multi-Partner)
-- **Dataset Type:** Logistics delivery data (origin not independently verified)
-- **Number of Records:** Approximately 25,000
-- **Number of Columns:** 15
-- **Domain:** Logistics and Delivery Operations
-- **File Format:** CSV
-- **Dataset Source:** [Kaggle – Delivery Logistics Dataset](https://www.kaggle.com/datasets/muhammadahmaddaar/delivery-logistics-dataset-india-multi-partner)
-
-## Key Dataset Fields
-
-| **Column** | **Description** |
-|---|---|
+| Column | Description |
+| --- | --- |
 | `delivery_id` | Identifier associated with a delivery record |
 | `delivery_partner` | Logistics partner handling the delivery |
 | `package_type` | Category of the package |
@@ -90,271 +108,138 @@ The data is used to demonstrate data preparation, KPI development, interactive v
 | `delivery_rating` | Customer rating for the delivery |
 | `delivery_cost` | Cost associated with the delivery |
 
-The dataset was reviewed and prepared for analysis before being used to develop the Power BI report.
+</details>
 
-## Project Workflow
+---
 
-The project follows a structured data analytics workflow.
+## 🔄 Project Workflow
 
-1. **Data Collection**  
-   Obtained the logistics dataset containing delivery and operational information.
+1. **Data Collection** – obtained the logistics dataset from Kaggle.
+2. **Data Inspection** – reviewed structure, column names, data types and values.
+3. **Data Preparation** – used Excel and Power Query to prepare the data.
+4. **Data Validation** – examined quality, including repeated delivery identifiers.
+5. **Data Modeling** – loaded the data into Power BI and organized the fields.
+6. **DAX Measure Creation** – built ten measures for counts, rates, costs and ratings.
+7. **Dashboard Development** – designed five report pages with KPI cards, charts and slicers.
+8. **Performance Analysis** – compared delivery performance, costs and ratings across categories.
+9. **Insight Development** – identified patterns and areas for further investigation.
 
-2. **Data Inspection**  
-   Reviewed the dataset structure, column names, data types, and available values.
+---
 
-3. **Data Preparation**  
-   Used Excel and Power Query to inspect and prepare the data for analysis.
+## 📊 Dashboard Structure
 
-4. **Data Validation**  
-   Examined data quality, including duplicate delivery identifiers and field consistency.
+| Page | Focus | KPIs | Main visuals |
+| --- | --- | --- | --- |
+| **1. Executive Overview** | High-level summary | Total Deliveries, Delayed Deliveries, Average Delivery Cost, Average Delivery Rating, Delay Rate | Delayed deliveries by partner, on-time vs delayed by region, delay rate by region |
+| **2. Delivery Performance Analysis** | Where delays happen | Delay Rate, On-Time Rate, Delayed Deliveries, Average Delivery Rating | Delay rate by partner, region, weather and package type; donut of delivery status |
+| **3. Cost & Operations Analysis** | What drives cost | Total Delivery Cost, Average Delivery Cost, Average Delivery Rating, Total Deliveries | Average cost by partner, delivery mode and vehicle type |
+| **4. Customer & Service Analysis** | Ratings and service quality | Average Delivery Rating, Low Rating %, Delayed Deliveries, On-Time Rate | Rating by delay status, rating distribution, rating by partner, low rating % by region |
+| **5. Regional & Package Cost Insights** | Cost by region and package | Total Deliveries, Total Delivery Cost, Delay Rate, Average Delivery Cost | Average cost by region and by package type |
 
-5. **Data Modeling**  
-   Loaded the prepared data into Power BI and organized the fields for reporting.
+---
 
-6. **DAX Measure Creation**  
-   Created measures to calculate delivery counts, delay rates, on-time rates, delivery costs, and customer rating indicators.
+## 🧮 DAX Measures
 
-7. **Dashboard Development**  
-   Designed five report pages with KPI cards, charts, and interactive slicers.
-
-8. **Performance Analysis**  
-   Compared delivery performance, operational costs, and customer ratings across different categories.
-
-9. **Insight Development**  
-   Used the dashboard to identify important patterns and areas for further investigation.
-
-## Dashboard Structure
-The report is organized into five pages, with each page focusing on a specific area of logistics analysis.
-
-### Page 1 – Executive Overview
-
-Provides a high-level summary of logistics performance.
-
-**Key Performance Indicators:**
-
-- Total Deliveries
-- Delayed Deliveries
-- Average Delivery Cost
-- Average Delivery Rating
-- Delay Rate
-
-**Analysis includes:**
-
-- Delayed deliveries by delivery partner
-- On-time and delayed deliveries by region
-- Regional delay-rate comparisons
-
-**Purpose:** To provide a quick overview of delivery performance and help users identify areas requiring closer attention.
-
-### Page 2 – Delivery Performance Analysis
-
-Examines delivery delays across different operational categories.
-
-**Key Performance Indicators:**
-
-- Delay Rate
-- On-Time Rate
-- Delayed Deliveries
-- Average Delivery Rating
-
-**Analysis includes:**
-
-- Delay rate by delivery partner
-- Delay rate by region
-- Delay rate by weather condition
-- Delay rate by package type
-- A Donut chart for delivery status distribution
-
-**Purpose:** To explore how delivery performance varies across partners, regions, weather conditions and package types.
-
-### Page 3 – Cost & Operations Analysis
-
-Focuses on delivery expenditure and operational cost comparisons.
-
-**Key Performance Indicators:**
-
-- Total Delivery Cost
-- Average Delivery Cost
-- Average Delivery Rating
-- Total Deliveries
-
-**Analysis includes:**
-
-- Average delivery cost by delivery partner
-- Average delivery cost by vehicle type
-- Average delivery cost by delivery mode
-
-**Purpose:** To compare delivery costs across operational categories and identify areas for further cost analysis.
-
-### Page 4 – Customer & Service Analysis
-
-Explores customer ratings and service quality.
-
-**Key Performance Indicators:**
-
-- Average Delivery Rating
-- Low Rating Percentage
-- Delayed Deliveries
-- On-Time Rate
-
-**Analysis includes:**
-
-- Average delivery rating by delay status
-- Distribution of delivery ratings
-- Average rating by delivery partner
-- Low-rating percentage by region
-
-**Purpose:** To understand customer rating patterns and examine how service performance varies across delivery categories.
-
-### Page 5 – Regional & Package Cost Insights
-
-Compares delivery costs across geographic regions and package categories.
-
-**Key Performance Indicators:**
-
-- Total Deliveries
-- Total Delivery Cost
-- Delay Rate
-- Average Delivery Cost
-
-**Analysis includes:**
-
-- Average delivery cost by region
-- Average delivery cost by package type
-
-**Purpose:** To explore regional and package-level cost differences and support more detailed operational analysis.
-
-## DAX Measures Used
-
-DAX (Data Analysis Expressions) was used to create measures for calculating key logistics performance indicators.
-
-| **Measure** | **Purpose** |
-|---|---|
+| Measure | Purpose |
+| --- | --- |
 | **Total Deliveries** | Counts delivery records |
 | **Delayed Deliveries** | Counts records marked as delayed |
 | **On-Time Deliveries** | Counts records marked as not delayed |
-| **Delay Rate %** | Calculates delayed deliveries as a percentage of total deliveries |
-| **On-Time Rate %** | Calculates on-time deliveries as a percentage of total deliveries |
-| **Average Delivery Cost** | Calculates the average delivery cost |
-| **Total Delivery Cost** | Calculates the sum of delivery costs |
-| **Average Delivery Rating** | Calculates the average customer rating |
+| **Delay Rate %** | Delayed deliveries as a percentage of total deliveries |
+| **On-Time Rate %** | On-time deliveries as a percentage of total deliveries |
+| **Average Delivery Cost** | Average delivery cost |
+| **Total Delivery Cost** | Sum of delivery costs |
+| **Average Delivery Rating** | Average customer rating |
 | **Low Rating Deliveries** | Counts deliveries with a rating of 2 or below |
-| **Low Rating %** | Calculates low-rating deliveries as a percentage of total deliveries |
+| **Low Rating %** | Low-rating deliveries as a percentage of total deliveries |
 
-## DAX Functions
-- COUNTROWS() – Counts rows in a table.
-- CALCULATE() – Evaluates an expression under specified filter conditions.
-- DIVIDE() – Performs division with an optional alternate result when the denominator is zero.
-- AVERAGE() – Calculates the arithmetic mean of a column.
-- SUM() – Adds the values in a column.
+**Functions used:** `COUNTROWS()` · `CALCULATE()` · `DIVIDE()` · `AVERAGE()` · `SUM()`
 
-These measures support consistent calculations across the dashboard and respond to the report's filter selections.
+## 📈 Charts & Visualizations
 
-## Charts & Visualizations
+| Visualization | Analytical Purpose |
+| --- | --- |
+| Clustered Column Chart | Compares values across categories |
+| Clustered Bar Chart | Compares average delivery cost across package types |
+| Stacked Column Chart | Shows the composition of delivery counts |
+| Donut Chart | Shows the distribution of a selected category |
+| KPI Cards | Highlight important performance indicators |
 
-The dashboard uses visualizations to communicate delivery performance and cost patterns.
+## 🎚️ Interactive Slicers
 
-| **Visualization**      | **Analytical Purpose**                                  |
-| ---------------------- | ------------------------------------------------------- |
-| Clustered Column Chart | Compares values across categories                       |
-| Clustered Bar Chart    | Compares average delivery cost across package types     |
-| Stacked Column Chart   | Shows the composition of delivery counts                |
-| Donut Chart            | Shows the distribution of a selected category           |
-| KPI Cards              | Highlight important performance indicators              |
-
-The charts are organized across the five report pages to support both high-level monitoring and detailed comparisons.
-
-## Interactive Slicers
-
-Slicers allow users to filter the report and explore selected parts of the dataset.
-
-| **Slicer**        | **Purpose**                                                     |
-| ----------------- | --------------------------------------------------------------- |
-| Delivery Partner  | Focuses analysis on a selected logistics partner                |
-| Region            | Filters results by geographic region                            |
+| Slicer | Purpose |
+| --- | --- |
+| Delivery Partner | Focuses analysis on a selected logistics partner |
+| Region | Filters results by geographic region |
 | Weather Condition | Explores delivery performance under selected weather conditions |
-| Delivery Mode     | Compares results for selected delivery modes                    |
-| Package Type      | Filters delivery costs by package category                      |
+| Delivery Mode | Compares results for selected delivery modes |
+| Package Type | Filters delivery costs by package category |
 
-The available slicers vary by report page. KPI cards and charts respond to applicable filter selections, allowing users to explore the data interactively.
+> [!NOTE]
+> The available slicers vary by report page. KPI cards and charts respond to applicable filter selections.
 
-## Key Performance Indicators & Findings
+---
 
-The current dashboard calculations provide the following summary of the dataset:
+## 🔍 Key Findings
 
-| **Metric** | **Current Result** |
-|---|---:|
-| Total Delivery Records | 25,000 |
-| Delayed Deliveries | 6,669 |
-| On-Time Deliveries | 18,331 |
-| Delay Rate | 26.7% |
-| On-Time Rate | 73.3% |
-| Average Delivery Cost | ₹864.94 |
-| Average Delivery Rating | 3.67 / 5 |
-
-## Initial Observations
-
-## Key Findings
-
-**Delivery Performance**
+### 🚚 Delivery Performance
 - Of 25,000 deliveries, 6,669 (26.7%) were marked delayed and 18,331 (73.3%) were on time. The delayed group includes about 5,340 late deliveries and 1,329 failed deliveries.
-- Weather shows the widest gap in delay rates: stormy (41.4%) and rainy (37.4%) conditions are well above clear (17.4%), hot (17.1%) and cold (16.0%) conditions.
-- Delay rates across delivery partners are close together, from 24.8% (Delhivery) to 28.3% (XpressBees).
-- Central has the highest regional delay rate (27.3%) and East the lowest (25.8%). Package types range from 24.8% (furniture) to 27.5% (pharmacy).
+- Weather shows the widest gap in delay rates: stormy (41.4%) and rainy (37.4%) conditions are well above clear (17.4%), hot (17.1%) and cold (16.0%).
+- Delay rates across partners are close together, from 24.8% (Delhivery) to 28.3% (XpressBees).
+- Central has the highest regional delay rate (27.3%) and East the lowest (25.8%).
 
-**Cost & Operations**
+### 💰 Cost & Operations
 - Total delivery cost is ₹21.62M, with an average of ₹864.94 per delivery.
 - Delivery mode shows the largest cost difference: same-day (₹929.87) and express (₹880.43) cost more than two-day (₹829.71) and standard (₹819.34).
 - Average cost differs only slightly by partner (₹848.11 to ₹872.83), vehicle type (₹857.66 to ₹869.24) and region (₹858.30 to ₹874.21).
 - Clothing (₹879) and automobile parts (₹877) have the highest average cost by package type, and fragile items (₹847) the lowest.
 
-**Customer & Service**
-- The average delivery rating is 3.67 out of 5, and 18.1% of deliveries have a low rating (2 or below).
+### ⭐ Customer & Service
+- The average rating is 3.67 out of 5, and 18.1% of deliveries have a low rating (2 or below).
 - Deliveries not marked delayed average a rating of 4.2, compared with 2.2 for delayed deliveries.
 - Average ratings are similar across partners (3.6 to 3.7).
-- Central has both the highest delay rate and the highest low-rating share (18.8%), and East has the lowest of both (25.8% and 17.4%).
+- Central has the highest low-rating share (18.8%) and East the lowest (17.4%).
 
-These findings describe the current dataset. The dashboard shows associations only, and further analysis would be needed to establish the causes of delays, cost differences or rating patterns.
+> [!IMPORTANT]
+> These findings describe associations in the current dataset. Further analysis would be needed to establish the causes of delays, cost differences or rating patterns.
 
-## Business Value
+---
 
-The dashboard provides a consolidated view of logistics operations and helps users:
+## 💼 Business Value
 
 - Monitor delivery performance through key metrics.
 - Compare delivery partners and geographic regions.
 - Examine operational cost differences.
 - Explore customer satisfaction patterns.
 - Identify categories that may require further investigation.
-- Communicate logistics performance through interactive visual reports.
 
-The dashboard supports analysis and decision-making; it does not by itself establish the causes of operational outcomes.
+## ⚠️ Limitations
 
-## Data Quality & Limitations
-- The dataset contains repeated delivery identifiers. The records were retained for analysis, so the number of records should not automatically be interpreted as the number of unique deliveries.
-- Some delivery-time fields presented data-type consistency challenges during preparation. These fields require additional validation before being used for detailed time-based analysis.
-- The findings are based on the available dataset and should be interpreted within its scope.
-- Relationships observed in the dashboard do not necessarily indicate causation.
-- Dataset sharing will depend on permission to redistribute the source data.
+- The dataset contains repeated delivery identifiers. Records sharing an identifier have different values in other fields, so they were treated as separate records and retained. The number of records should therefore not automatically be interpreted as the number of unique deliveries.
 - The `delayed` field marks both late and failed deliveries as delayed, so Delayed Deliveries (6,669) and Delay Rate (26.7%) include the 1,329 failed deliveries shown separately in the delivery status chart.
+- Some delivery-time fields had data-type consistency challenges during preparation and need further validation before detailed time-based analysis.
+- Relationships observed in the dashboard do not necessarily indicate causation.
+- Dataset sharing depends on permission to redistribute the source data.
 
-## Future Enhancements
-Potential improvements include:
+## 🚀 Future Enhancements
 
-- Investigating the causes of delivery delays in greater detail.
-- Adding validated delivery-time and expected-time analysis.
-- Developing additional cost-efficiency indicators.
-- Exploring relationships between delivery delays and customer ratings.
-- Adding more detailed time-based performance trends, if reliable date fields become available.
-- Introducing predictive analytics for delivery-delay risk.
-- Improving report navigation and adding further interactive features.
-- Refreshing the dashboard with updated data when available.
+- Investigate the causes of delivery delays in greater detail.
+- Add validated delivery-time and expected-time analysis.
+- Develop additional cost-efficiency indicators.
+- Add time-based performance trends, if reliable date fields become available.
+- Introduce predictive analytics for delivery-delay risk.
 
-## Conclusion
-The Logistics & Delivery Performance Intelligence Dashboard demonstrates how Power BI, Power Query, and DAX can be used to transform logistics data into an interactive analytical report.
+## 📁 Project Files
 
-By bringing delivery performance, operational costs, and customer ratings together, the project provides a structured way to explore logistics operations across multiple dimensions.
+- 📊 [Presentation (PowerPoint)](presentation/Logistics_Delivery_Dashboard_with_Screenshots.pptx)
+- 🖼️ [Dashboard screenshots](screenshots/)
 
-The project also demonstrates practical skills in data preparation, KPI development, data visualization, and business-focused analysis.
+---
 
-## Author
-Asmiya Farin S
+## ✅ Conclusion
+
+This project shows how Power BI, Power Query and DAX can turn logistics data into an interactive analytical report. By bringing delivery performance, operational costs and customer ratings together, it gives a structured way to explore logistics operations, and it demonstrates practical skills in data preparation, KPI development, data visualization and business analysis.
+
+## 👤 Author
+
+**Asmiya Farin S**
